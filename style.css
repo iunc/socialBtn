@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #ebf8f9;
+  user-select: none;
+}
+body .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .wrapper .icons {
+  display: inline-block;
+  width: 90px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+body .wrapper .icons:hover span {
+  opacity: 1;
+}
+body .wrapper .icons i {
+  font-size: 40px;
+  display: block;
+  text-align: center;
+}
+body .wrapper .icons i.fa-facebook-square {
+  color: #4267b2;
+}
+body .wrapper .icons i.fa-instagram {
+  color: #d72888;
+}
+body .wrapper .icons i.fa-twitter-square {
+  color: #38a1f3;
+}
+body .wrapper .icons i.fa-youtube {
+  color: red;
+}
+body .wrapper .icons span {
+  display: block;
+  width: 90px;
+  text-align: center;
+  background: red;
+  padding: 9px 0;
+  color: white;
+  border-radius: 3px;
+  position: absolute;
+  top: -47px;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+body .wrapper .icons span::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: red;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+body .wrapper .icons span.fb, body .wrapper .icons span.fb::before {
+  background: #4267b2;
+}
+body .wrapper .icons span.insta, body .wrapper .icons span.insta::before {
+  background: #d72888;
+}
+body .wrapper .icons span.twitter, body .wrapper .icons span.twitter::before {
+  background: #38a1f3;
+}
+
+/*# sourceMappingURL=style.css.map */
